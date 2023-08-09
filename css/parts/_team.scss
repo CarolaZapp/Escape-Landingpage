@@ -1,0 +1,77 @@
+ /** Team-Bereich */
+    
+    .team {
+        padding-top:$landing-padding;
+        padding-bottom: $landing-padding - 15px;
+        background-color:rgb(30,30,30); 
+    }
+    
+    .team-heading {
+        font-weight: lighter;
+        margin-bottom:0px;
+        text-align:center;
+        color: rgb(255,255,255);
+    }
+    
+    .team-subheading {
+        text-align:center;
+        margin-bottom:30px;
+        color:rgb(117,117,117);
+    }
+    
+    .team-image {
+        max-width: 35%;
+        margin-top: 30px;
+
+        @media($bp-larger-than-phablet){
+            max-width: 70%;
+            margin-top: 0px;
+        }
+    }
+    
+    .team-image-container {
+        text-align: center;
+    }
+    
+    .team-member {
+        color:rgb(255,255,255);
+        text-align: center;
+        font-size: 20px;
+        margin-bottom:0;
+        font-weight: bold;
+    }
+    
+    .team-job {
+        color:rgb(255,255,255);
+        text-align: center;
+        margin-bottom:7px;
+    }
+    
+    .team-icons {
+        text-align: center;
+    }
+    
+    .team-icon {
+        color: rgb(255,255,255);
+        border: 2px solid  rgb(255,255,255);
+        border-radius: 100%;
+        width: 25px;
+        height: 25px;
+        display:inline-block;
+        text-align: center;
+    
+    }
+    
+    .icon-twitter,
+    .icon-facebook,
+    .icon-pinterest,
+    .icon-google {
+        margin-top: 6px; 
+    }
+    
+    
+.team-slogan {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }

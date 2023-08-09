@@ -1,0 +1,126 @@
+/** Client-Bereich */
+    
+    .clients {
+        padding-top:$landing-padding;
+        padding-bottom: $landing-padding - 15px;
+        background-color: rgb(244,244,244);
+    
+    }
+    
+    .clients-heading {
+        font-weight: lighter;
+        margin-bottom:0px;
+        text-align:center;
+    }
+    
+    .clients-subheading {
+        text-align:center;
+        margin-bottom:50px;
+    }
+    
+    .client-quote
+     {
+        border: 2px solid rgb(125,125,125);
+        border-radius: 3px;
+        background-color: rgb(255,255,255);
+        padding: clamp(25px, 5vw, 75px);
+        // padding-top: 25px;
+        // padding-right: 25px;
+        // padding-bottom: 25px;
+        // font-size: 150%;
+        font-size:clamp(100%, 2vw, 150%);
+        font-weight: lighter;
+        font-style:italic;
+        position:relative;
+        margin-bottom: 50px;
+        
+        // @media ($bp-larger-than-phablet){
+        //     padding-left: 75px;
+        //     padding-right: 75px;
+        //     padding-top: 55px;
+        //     padding-bottom: 50px;
+        // }
+        
+    }
+    
+    .client-quote p {
+    margin-bottom:15px;
+    
+    }
+    
+    .client-quote-name {
+        font-style: normal;
+        color: rgb(59, 59, 247);
+        font-size:66%;
+    }
+
+    @media ($bp-larger-than-phablet) {
+        .client-quote::before,
+        .client-quote::after
+        {
+            content:"";
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top:25%;
+        }
+        .client-quote::before {
+            left: -32px;
+            margin-top:-16px;
+            border: 16px solid transparent;
+            border-right: 16px solid rgb(125,125,125);
+        }
+        .client-quote::after {
+            left: -26px;
+            margin-top:-13px;
+            border: 13px solid transparent;
+            border-right: 13px solid rgb(255,255,255);
+        }
+        
+        .client-two-quote::before {
+            right: -32px;
+            left:auto;
+            margin-top:-16px;
+            border: 16px solid transparent;
+            border-left: 16px solid rgb(125,125,125);
+        }
+        .client-two-quote::after {
+            right: -26px;
+            left:auto;
+            margin-top:-13px;
+            border: 13px solid transparent;
+            border-left: 13px solid rgb(255,255,255);
+        }
+    }
+
+    .client-image {
+        display: none;
+
+        @media ($bp-larger-than-phablet){
+            display: block;
+            // margin-top: 150px;
+        }
+
+        @media ($bp-larger-than-tablet ){
+            // margin-top: 75px;
+        }
+
+        @media ($bp-larger-than-desktop ){
+            // margin-top: 10px;
+        }
+
+        @media ($bp-larger-than-desktophd){
+            // margin-top: 0px;
+        }
+    }
+
+    .client-quote-image {
+        width: 45px;
+        float: left;
+        margin-right: 10px;
+
+        @media ($bp-larger-than-phablet){
+            display: none;
+        }
+    }
